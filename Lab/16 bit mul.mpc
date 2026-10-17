@@ -1,0 +1,63 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LDA 2500h
+\par MOV B A
+\par LDA 2501h
+\par MOV C A
+\par LXI H 0000h
+\par MOV A C
+\par ORA A
+\par JZ DONE
+\par LOOP: MOV A L
+\par ADD B
+\par MOV L A
+\par JNC NEXT
+\par INR H
+\par NEXT: DCR C
+\par JNZ LOOP
+\par DONE: SHLD 2502h
+\par HLT
+\par }
+<End Codes>
+20
+1| 2500| 05
+2| 2501| 03
+3| 2502| 0F
+<End UserData>
+92
+1| 8000| 3A
+2| 8001| 00
+3| 8002| 25
+4| 8003| 47
+5| 8004| 3A
+6| 8005| 01
+7| 8006| 25
+8| 8007| 4F
+9| 8008| 21
+10| 8009| 00
+11| 800A| 00
+12| 800B| 79
+13| 800C| B7
+14| 800D| CA
+15| 800E| 1B
+16| 800F| 80
+17| 8010| 7D
+18| 8011| 80
+19| 8012| 6F
+20| 8013| D2
+21| 8014| 17
+22| 8015| 80
+23| 8016| 24
+24| 8017| 0D
+25| 8018| C2
+26| 8019| 10
+27| 801A| 80
+28| 801B| 22
+29| 801C| 02
+30| 801D| 25
+31| 801E| 76
+<End HexData>
+
+
+<End Comment>

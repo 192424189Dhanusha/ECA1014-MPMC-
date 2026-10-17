@@ -1,0 +1,26 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI A 25h
+\par CMA
+\par STA 4203h
+\par HLT
+\par }
+<End Codes>
+20
+1| 4200| AB
+2| 4201| CD
+3| 4202| 00
+4| 4203| DA
+<End UserData>
+37
+1| 8000| 3E
+2| 8001| 25
+3| 8002| 2F
+4| 8003| 32
+5| 8004| 03
+6| 8005| 42
+7| 8006| 76
+<End HexData>
+
+<End Comment>
